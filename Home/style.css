@@ -1,0 +1,55 @@
+/*Header Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Code Pro", monospace;
+}
+
+body {
+  position: relative;
+  margin: 0px;
+}
+
+header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #400140;
+  position: fixed;
+  font-size: medium;
+  z-index: 30;
+}
+.toplogo {
+  margin-top: 15px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.toplogo img {
+  height: 9%;
+  width: 9%;
+  cursor: pointer;
+}
+
+nav {
+  position: absolute;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li a {
+  color: white;
+  padding: 1px;
+  text-decoration: none;
+  cursor: pointer;
+}
