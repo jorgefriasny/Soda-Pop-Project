@@ -1,34 +1,44 @@
 /*Header Styling */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: "Source Code Pro", monospace;
 }
 
 body {
-  position: relative;
-  margin: 0px;
+margin: 0;
+border: 0;
+position: relative;
 }
 
 header {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   background-color: #400140;
   position: fixed;
-  font-size: medium;
+  font-size: small;
+  height: 3.7rem;
+  width: 100%;
   z-index: 30;
+  box-shadow: 0px 0px 60px rgb(52, 51, 51);
 }
 .toplogo {
-  margin-top: 15px;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+  margin-right: auto;
+  margin-left: 1.5rem;
+  background-color: #400140;
+  width: 120px;
+  height: auto;
+  padding-top: 3.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 60px rgb(52, 51, 51);
 }
 
 .toplogo img {
-  height: 9%;
-  width: 9%;
+  height: auto;
+  width: 60%;
   cursor: pointer;
 }
 
@@ -53,3 +63,123 @@ nav li a {
   text-decoration: none;
   cursor: pointer;
 }
+
+/*Banner Styling */
+
+.caption {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: flex-start;
+  position: relative;
+  font-size: 4vw;
+  border: 6px solid black;
+  height: auto;
+  width: 50vw;
+  left: 18vw;
+  color: #242323;
+  text-shadow: #e0e0e0 1px 1px 0;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 5vw;
+  border: 6px solid rgb(235, 30, 30);  
+}
+
+.banner img {
+  flex: 1;
+  position:relative;
+  left: 14.5vw;
+  bottom: 20vw;
+  height: auto;
+  width: 85vw;
+  border: 6px solid rgb(101, 224, 19);
+  
+}
+
+/*Product Info Styling */
+
+.productDescription {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  background-color: lightgray;
+  border: 6px solid rgb(49, 118, 4);
+}
+
+.descriptionText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  width: 83%;
+  background-color: #400140;
+  color: white;
+  font-size: small;
+  border-radius: 8px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  box-shadow: 0px 10px 15px rgb(52, 51, 51);
+}
+
+/* Media Query for smaller screens */
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    position: relative;
+  }
+  .toplogo {
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-top: 0.5rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .toplogo img {
+    width: 20%;
+  }
+  nav {
+    position: static;
+    margin-top: 1rem;
+  }
+  .navbarlist {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbarlist li {
+    margin: 0.5rem;
+  }
+  .caption {
+    font-size: 150%;
+    border: 3px solid black;
+    left:
+  }
+
+  .banner {
+    
+    position: relative;
+    
+  }
