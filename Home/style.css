@@ -1,12 +1,39 @@
-/*Header Styling */
+/* General Styling and buttons */
+
+
+.button {
+  padding: 3vw;
+}
+
+.button .learnMore {
+  appearance: none;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  font-size: medium;
+  font-weight: 800;
+  background-color: #06FF1A;
+  border: 1;
+  cursor: pointer;
+}
+
+.button .learnMore:hover {
+  background-color:#FF03FF;
+  transition: 0.20s;
+}
+/* Header Styling */
 * {
   font-family: "Source Code Pro", monospace;
 }
 
 body {
-margin: 0;
-border: 0;
-position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: column;
+
+  margin: 0;
+  border: 0;
+  position: relative;
 }
 
 header {
@@ -63,8 +90,13 @@ nav li a {
   text-decoration: none;
   cursor: pointer;
 }
+nav li a:hover {
+  color: #06FF1A;
+  font-size: 110%;
+  transition: 0.20s;
+}
 
-/*Banner Styling */
+/* Banner Styling */
 
 .caption {
   display: flex;
@@ -94,8 +126,7 @@ nav li a {
   height: 100%;
   position: relative;
   overflow: hidden;
-  top: 0vw;
-  border: 6px solid rgb(235, 30, 30);  
+  top: 0vw; 
 }
 
 .banner img {
@@ -109,11 +140,11 @@ nav li a {
   
 }
 
-/*Product Info Styling */
+/* Product Info Styling */
 
 .productDescription {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -121,8 +152,9 @@ nav li a {
   width: 100%;
   flex: 1;
   height: 48vw;
+  margin-top: 0;
   background-color: lightgray;
-  border: 6px solid rgb(49, 118, 4);
+  padding-bottom: 3%;
 }
 
 .descriptionText {
@@ -131,10 +163,10 @@ nav li a {
   justify-content: center;
   align-items: center;
   align-content: flex-start;
-  width: 83%;
+  width: 60%;
   background-color: #400140;
   color: lightgray;
-  font-size: small;
+  font-size: medium;
   border-radius: 8px;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -143,7 +175,96 @@ nav li a {
   box-shadow: 0px 10px 15px rgb(52, 51, 51);
 }
 
-/*Footer Styling */
+/* Mission Statement */
+
+.missionStatement {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+  
+  
+}
+.missionStatement h3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  margin-bottom: 10vw;
+  align-items: center;
+  align-content: center;
+  padding: 2vw;
+  background-color: ;
+  border-radius: 8px;
+  border: solid;
+  background-color: #06FF1A;
+}
+
+.missionIcons ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+  font-size: medium;
+  padding-bottom: 60px;
+}
+.missionIcons ul li {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  padding: .8rem;
+  margin-right: 3vw;
+}
+.missionIcons ul i {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 2vw;
+  font-size: 400%;
+  padding: 20%;
+  color: #FF03FF;
+  border-radius: 50%;
+  border: solid 1px lightgray ;
+}
+.missionIcons ul i:hover {
+  background-color: #06FF1A;
+  border-radius: 50%;
+  transition: .2s;
+  padding: 20%;
+  border: 1px solid black;
+}
+
+.missionText {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  width: 75%;
+  background-color: #400140;
+  color: lightgray;
+  font-size: medium;
+  border-radius: 8px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  box-shadow: 0px 10px 15px rgb(52, 51, 51);
+}
+
+/* Footer Styling */
 
 footer {
   display: flex;
@@ -154,15 +275,16 @@ footer {
   align-content: center;
   background-color: #400140;
   position: relative;
+  bottom: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: 0px;
   font-size: small;
-  height: 10.0rem;
+  height: 10rem;
   width: 100%;
   z-index: 40;
   align-self;
-  border: 6px solid rgb(235, 30, 163);
 }
-
-
 
 footer ul {
   text-decoration: none;
@@ -186,6 +308,12 @@ footer li a {
   cursor: pointer;
 }
 
+footer li a:hover {
+  color: #06FF1A;
+  font-size: 110%;
+  transition: 0.20s;
+}
+
 footer div ul {
   display: flex;
   list-style: none;
@@ -200,6 +328,12 @@ footer i {
   cursor: pointer;
   text-decoration: none;
   font-size: 200%;
+}
+
+footer i:hover {
+  color:#FF03FF;
+  font-size: 250%;
+  transition: 0.20s;
 }
 
 .spinningLogo {
