@@ -38,7 +38,7 @@ header {
 
 .toplogo img {
   height: auto;
-  width: 60%;
+  width: 63%;
   cursor: pointer;
 }
 
@@ -58,7 +58,7 @@ nav li {
 }
 
 nav li a {
-  color: white;
+  color: lightgray;
   padding: 1px;
   text-decoration: none;
   cursor: pointer;
@@ -74,12 +74,14 @@ nav li a {
   justify-content: flex-start;
   position: relative;
   font-size: 4vw;
-  border: 6px solid black;
   height: auto;
   width: 50vw;
   left: 18vw;
   color: #242323;
   text-shadow: #e0e0e0 1px 1px 0;
+  top:7vw;
+  order: 6px solid black;
+  z-index: 25;
 }
 
 .banner {
@@ -92,7 +94,7 @@ nav li a {
   height: 100%;
   position: relative;
   overflow: hidden;
-  top: 5vw;
+  top: 0vw;
   border: 6px solid rgb(235, 30, 30);  
 }
 
@@ -103,7 +105,7 @@ nav li a {
   bottom: 20vw;
   height: auto;
   width: 85vw;
-  border: 6px solid rgb(101, 224, 19);
+  border-radius: 8px;
   
 }
 
@@ -116,9 +118,9 @@ nav li a {
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 100%;
   width: 100%;
   flex: 1;
+  height: 48vw;
   background-color: lightgray;
   border: 6px solid rgb(49, 118, 4);
 }
@@ -131,7 +133,7 @@ nav li a {
   align-content: flex-start;
   width: 83%;
   background-color: #400140;
-  color: white;
+  color: lightgray;
   font-size: small;
   border-radius: 8px;
   padding-left: 5vw;
@@ -139,6 +141,88 @@ nav li a {
   padding-top: 5vw;
   padding-bottom: 5vw;
   box-shadow: 0px 10px 15px rgb(52, 51, 51);
+}
+
+/*Footer Styling */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #400140;
+  position: relative;
+  font-size: small;
+  height: 10.0rem;
+  width: 100%;
+  z-index: 40;
+  align-self;
+  border: 6px solid rgb(235, 30, 163);
+}
+
+
+
+footer ul {
+  text-decoration: none;
+}
+
+footer .footerList {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+}
+
+footer li {
+  margin-right: 20px;
+}
+
+footer li a {
+  display: flex;
+  color: lightgray;
+  padding: 1px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer div ul {
+  display: flex;
+  list-style: none;
+}
+
+
+footer i {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #06FF1A;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 200%;
+}
+
+.spinningLogo {
+  align-items: center;
+  justify-content: center;
+  background: lightgray;
+  padding: .1rem;
+  border-radius: 50%;
+ 
+}
+
+.spinningLogo img {
+  width: 7rem;
+  height: auto;
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Media Query for smaller screens */
@@ -174,7 +258,7 @@ nav li a {
   }
   .caption {
     font-size: 150%;
-    border: 3px solid black;
+
     left:
   }
 
