@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soda Pop Project</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Web Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Javascript File-->
+    <script src="/javascript.js"></script>
+  </head>
+  <body>
+
+    <!-- Header File-->
+    <div id="header">
+      <script>
+        fetch("/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.querySelector("#header").innerHTML = data;
+          });
+      </script>
+    </div>
+
+    <!-- Contact Me Form-->
+    <div class="feedbackForm">
+      <form class="contactMeForm" action="">
+        <h2>_Contact_Me</h2>
+        <p>
+          "If you require developer services, please use this form to contact me directly. I also welcome feedback from other developers, so please feel free to leave your thoughts and suggestions. Your input is greatly appreciated!" - Jorge F.
+        </p>
+
+        <div class="formName">
+          <label for="firstName"> _First_Name</label>
+        <input type="text" id="firstName" name="firstName"> 
+        <label for="lastName">_Last_Name</label>
+        <input type="text" id="lastName" name="lastName"> 
+        </div>
+
+        <div class="subject">
+          <label for="subject"> _Subject</label>
+        <input type="text" id="subject" name="subject">
+        </div>
+          
+
+        <div class="yourMessage">
+          <label for="yourMessage">_Your_Message</label>
+          <input type="text" id="yourMessage" name="yourMessage">
+        </div>
+        
+
+        <div class="button">
+          <a href="">
+            <button class="sendYourMessage">_Send</button>
+          </a>
+        </div>
+      </div>
+      </form>
+    </div>
+<!-- Footer -->
+<div id="footer">
+  <script>
+    fetch("/footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.querySelector("#footer").innerHTML = data;
+      });
+  </script>
+</div>
+    
+  </body>
+</html>

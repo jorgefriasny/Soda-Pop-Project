@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soda Pop Project</title>
-    <link rel="stylesheet" type="text/css" href="/Home/style.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,24 +18,20 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Javascript File-->
+    <script src="/javascript.js"></script>
   </head>
   <body>
-    <!-- Nav Bar -->
-
-    <header>
-      <div class="toplogo">
-        <img src="/Assets/Images/Soda-Pop-Project-LOGO.png" />
-      </div>
-      <nav class="navbar">
-        <ul class="navbarlist">
-          <li><a href="Home/">_Home</a></li>
-          <li>
-            <a href="About This Project/"> <!-- About -->_TheSodaPopProject</a>
-          </li>
-          <li><a href="Feedback/">_Feedback</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Header File-->
+    <div id="header">
+      <script>
+        fetch("/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.querySelector("#header").innerHTML = data;
+          });
+      </script>
+    </div>
 
     <!-- Banner -->
     <div class="banner">
@@ -102,40 +98,21 @@
         more sustainable future, one can at a time.
       </p>
       <div class="button">
-        <button class="learnMore">_TheSodaPopProject</button>
+        <a href="/TheSodaPopProject/index.html">
+          <button class="learnMore">_TheSodaPopProject</button>
+        </a>
       </div>
     </div>
 
     <!-- Footer -->
-    <footer>
-      <div class="spinningLogo">
-        <img src="/Assets/Images/Soda-Pop-Sticker.png" alt="spinningSticker" />
-      </div>
-      <div class="footerLinks">
-        <ul class="footerList">
-          <li><a href="Home/">_Home</a></li>
-          <li>
-            <a href="About This Project/"> <!-- About -->_TheSodaPopProject</a>
-          </li>
-          <li><a href="Feedback/">_Feedback</a></li>
-        </ul>
-      </div>
-      <div class="icons">
-        <ul class="socialMediaIcons">
-          <li class="facebook'">
-            <i class="bx bxl-facebook"></i>
-          </li>
-          <li class="instagram'">
-            <i class="bx bxl-instagram"></i>
-          </li>
-          <li class="youtube'">
-            <i class="bx bxl-youtube"></i>
-          </li>
-          <li class="linkedin'">
-            <i class="bx bxl-linkedin"></i>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    <div id="footer">
+      <script>
+        fetch("/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.querySelector("#footer").innerHTML = data;
+          });
+      </script>
+    </div>
   </body>
 </html>
