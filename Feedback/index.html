@@ -22,7 +22,6 @@
     <script src="/javascript.js"></script>
   </head>
   <body>
-
     <!-- Header File-->
     <div id="header">
       <script>
@@ -36,49 +35,52 @@
 
     <!-- Contact Me Form-->
     <div class="feedbackForm">
-      <form class="contactMeForm" action="">
+      <form
+        class="contactMeForm"
+        action="https://formsubmit.co/el/jorgefriasny@gmail.com"
+        method="POST"
+      >
         <h2>_Contact_Me</h2>
         <p>
-          "If you require developer services, please use this form to contact me directly. I also welcome feedback from other developers, so please feel free to leave your thoughts and suggestions. Your input is greatly appreciated!" - Jorge F.
+          "If you require developer services, please use this form to contact me
+          directly. I also welcome feedback from other developers, so please
+          feel free to leave your thoughts and suggestions. Your input is
+          greatly appreciated!" - Jorge F.
         </p>
+
+        <div class="email">
+          <label for="email">_Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
 
         <div class="formName">
           <label for="firstName"> _First_Name</label>
-        <input type="text" id="firstName" name="firstName"> 
-        <label for="lastName">_Last_Name</label>
-        <input type="text" id="lastName" name="lastName"> 
+          <input type="text" id="firstName" name="firstName" />
+          <label for="lastName">_Last_Name</label>
+          <input type="text" id="lastName" name="lastName" />
         </div>
 
         <div class="subject">
           <label for="subject"> _Subject</label>
-        <input type="text" id="subject" name="subject">
+          <input type="text" id="subject" name="subject" />
         </div>
-          
 
         <div class="yourMessage">
           <label for="yourMessage">_Your_Message</label>
-          <input type="text" id="yourMessage" name="yourMessage">
+          <textarea
+            name="yourMessage"
+            id="yourMessage"
+            cols="30"
+            rows="10"
+          ></textarea>
         </div>
-        
 
         <div class="button">
           <a href="">
-            <button class="sendYourMessage">_Send</button>
+            <button class="sendYourMessage" type="submit">_Send</button>
           </a>
         </div>
-      </div>
       </form>
     </div>
-<!-- Footer -->
-<div id="footer">
-  <script>
-    fetch("/footer.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.querySelector("#footer").innerHTML = data;
-      });
-  </script>
-</div>
-    
   </body>
 </html>
